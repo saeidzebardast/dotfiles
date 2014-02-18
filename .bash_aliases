@@ -7,7 +7,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-
 alias ll='ls -la'
 alias l='ll'
 alias a='axel -a'
@@ -20,4 +19,11 @@ alias apt-get='sudo apt-get'
 alias psaux='ps aux'
 alias psgrep='psaux | grep -v grep | grep'
 
-
+if type "git" > /dev/null 2>&1; then
+    alias g='git'
+    alias add='git all'
+    alias commit='git commit'
+    alias pull='git pull'
+    alias push='git push'
+    alias checkout='git checkout'
+fi
