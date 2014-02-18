@@ -21,7 +21,7 @@ alias psgrep='psaux | grep -v grep | grep'
 
 if type "git" > /dev/null 2>&1; then
     alias g='git'
-    alias add='git all'
+    alias add='git add'
     alias commit='git commit'
     alias pull='git pull'
     alias push='git push'
