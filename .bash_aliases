@@ -10,6 +10,7 @@ fi
 alias ll='ls -la'
 alias l='ll'
 alias a='axel -a'
+alias c='clear'
 alias g='git'
 alias ..='cd ..'
 alias ...='cd ../../'
@@ -18,6 +19,7 @@ alias aptitude='sudo aptitude'
 alias apt-get='sudo apt-get'
 alias psaux='ps aux'
 alias psgrep='psaux | grep -v grep | grep'
+alias tailf='tail -f'
 
 if type "git" > /dev/null 2>&1; then
     alias g='git'
