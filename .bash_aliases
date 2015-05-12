@@ -29,3 +29,10 @@ if type "git" > /dev/null 2>&1; then
     alias push='git push'
     alias checkout='git checkout'
 fi
+
+if type "xdg-open" > /dev/null 2>&1; then
+    alias o='xdg-open'
+elif type "open" > /dev/null 2>&1; then
+    alias o='open'
+fi
+
