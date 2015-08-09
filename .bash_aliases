@@ -28,6 +28,7 @@ if type "git" > /dev/null 2>&1; then
     alias pull='git pull'
     alias push='git push'
     alias checkout='git checkout'
+    alias git-pull-all-subdirs='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;'
 fi
 
 if type "xdg-open" > /dev/null 2>&1; then
