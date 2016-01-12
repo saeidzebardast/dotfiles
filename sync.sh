@@ -15,5 +15,5 @@ else
 fi
 unset doIt
 source ~/.profile
-source ~/.bash_profile
+source ~/.bashrc
 source ~/.zshrc
