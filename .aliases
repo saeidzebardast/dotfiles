@@ -41,6 +41,6 @@ fi
 
 
 #NPM offline (https://addyosmani.com/blog/using-npm-offline/)
-alias npmo ="npm --cache-min 9999999 "
+alias npmo="npm --cache-min 9999999 "
 
 eval "$(thefuck --alias)"
