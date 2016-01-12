@@ -9,25 +9,27 @@ fi
 
 alias ll='ls -la'
 alias l='ll'
-alias a='axel -a'
-alias c='clear'
-alias g='git'
 alias ..='cd ..'
 alias ...='cd ../../'
+
+alias youtube-dl-playlist="youtube-dl --ignore-errors --playlist-reverse --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s'"
 alias youtube-dl-mp3='youtube-dl  --extract-audio --audio-format mp3'
+
+alias c='clear'
+alias a='axel -a'
 alias aptitude='sudo aptitude'
 alias apt-get='sudo apt-get'
-alias psaux='ps aux'
-alias psgrep='psaux | grep -v grep | grep'
+alias psgrep='ps aux | grep -v grep | grep'
 alias tailf='tail -f'
 
 if type "git" > /dev/null 2>&1; then
     alias g='git'
     alias add='git add'
     alias commit='git commit'
+    alias checkout='git checkout'
     alias pull='git pull'
     alias push='git push'
-    alias checkout='git checkout'
+    alias gpp='git pull; git push'
     alias git-pull-all-subdirs='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;'
 fi
 
@@ -37,3 +39,8 @@ elif type "open" > /dev/null 2>&1; then
     alias o='open'
 fi
 
+
+#NPM offline (https://addyosmani.com/blog/using-npm-offline/)
+npmo ="npm --cache-min 9999999 "
+
+eval "$(thefuck --alias)"
