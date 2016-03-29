@@ -12,7 +12,7 @@ alias l='ll'
 alias ..='cd ..'
 alias ...='cd ../../'
 
-alias youtube-dl-playlist="youtube-dl --ignore-errors --playlist-reverse --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s'"
+alias youtube-dl-playlist="youtube-dl --ignore-errors --output '%(playlist)s/%(playlist_index)s- %(title)s.%(ext)s'"
 alias youtube-dl-mp3='youtube-dl  --extract-audio --audio-format mp3'
 
 alias c='clear'
